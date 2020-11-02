@@ -23,11 +23,12 @@ Generated outputs after each execution will be stored in "cypress\screenshots" a
   ./node_modules/.bin/cypress run
   ```
 
+
 # Content
 ### Sample features:
 There are a some implemented sample features in [amazon features folder](https://github.com/DanielJR78/cypress-cucumber-sample/tree/main/cypress/integration/amazon).
  
-Each .feature file has a folder with the same name containing specific steps and classes
+Each .feature file has a folder with the same name containing specific steps and classes. Example:
 
 ```
 LoginRequired.feature
@@ -35,22 +36,6 @@ LoginRequired.feature
     LoginRequiredSteps.js
     LoginRequiredClasses.js
     AnySpecificCode.js
-    
-@feature-tag
-Feature: The Facebook
-
-  I want to open a social network page
-
-  @tag-to-include
-  Scenario: Opening a social network page
-    Given I open Facebook page
-    Then I see "Facebook" in the title
-
-  @another-tag-to-include @some-other-tag
-  Scenario: Different kind of opening
-    Given I kinda open Facebook page
-    Then I am very happy
-
 ```
 
 Shared steps and classes can optionnally be stored at [common folder](https://github.com/DanielJR78/cypress-cucumber-sample/tree/main/cypress/integration/common).
