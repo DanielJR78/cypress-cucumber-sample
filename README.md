@@ -26,22 +26,26 @@ Generated outputs after each execution will be stored in "cypress\screenshots" a
 
 # Content
 ### Sample features:
-Any test to be executed should be stored at [integration folder](https://github.com/DanielJR78/cypress-cucumber-sample/tree/main/cypress/integration).
+Any test to be executed should be stored under [integration folder](https://github.com/DanielJR78/cypress-cucumber-sample/tree/main/cypress/integration).
  
 Any *.feature file* should have an associated folder with the *same name* and containing specific steps and classes in *.js files*. 
 
-In our example, features are so implemented at [amazon subfolder](https://github.com/DanielJR78/cypress-cucumber-sample/tree/main/cypress/integration/amazon).
-
+In our example, features are so implemented in [amazon subfolder](https://github.com/DanielJR78/cypress-cucumber-sample/tree/main/cypress/integration/amazon).
 ```
-LoginRequired.feature
-\LoginRequired
-    LoginRequiredSteps.js
-    LoginRequiredClasses.js
-    AnySpecificCode.js
+cypress\integration\LoginRequired.feature
+cypress\integration\LoginRequired
+    |_LoginRequiredSteps.js
+    |_LoginRequiredClasses.js
+    |_AnySpecificCode.js
 ```
 
-Shared steps and classes can optionnally be stored at [common folder](https://github.com/DanielJR78/cypress-cucumber-sample/tree/main/cypress/integration/common).
+Shared steps and classes can optionnally be stored in [common folder](https://github.com/DanielJR78/cypress-cucumber-sample/tree/main/cypress/integration/common).
+```
+cypress\integration\common
+    |_CommonSteps.js
+    |_CommonClasses.js    
+```
 ### Sample scripts:
-There are a few tagged tests in these files:
+Standard sample scripts provided by Cypress are available in [samples folder](https://github.com/DanielJR78/cypress-cucumber-sample/tree/main/cypress/samples).
 
 
