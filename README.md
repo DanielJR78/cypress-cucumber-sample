@@ -17,6 +17,7 @@ Use this mode to manually execute tests from Cypress UI with web browser (develo
   ```
 ### Headless mode:
 Use this mode to execute them in background or batch mode (background/CI usage).
+
 Generated outputs after each execution will be stored in "cypress\screenshots" and "cypress\videos" folders.
   ```
   ./node_modules/.bin/cypress run
@@ -24,9 +25,17 @@ Generated outputs after each execution will be stored in "cypress\screenshots" a
 
 # Content
 ### Sample features:
-There are a some implemented sample features in [amazon features folder](https://github.com/DanielJR78/cypress-cucumber-sample/tree/main/cypress/integration/amazon)
+There are a some implemented sample features in [amazon features folder](https://github.com/DanielJR78/cypress-cucumber-sample/tree/main/cypress/integration/amazon).
+ 
+Each .feature file has a folder with the same name containing specific steps and classes
 
 ```
+LoginRequired.feature
+\LoginRequired
+    LoginRequiredSteps.js
+    LoginRequiredClasses.js
+    AnySpecificCode.js
+    
 @feature-tag
 Feature: The Facebook
 
@@ -44,6 +53,7 @@ Feature: The Facebook
 
 ```
 
+Shared steps and classes can optionnally be stored at [common folder](https://github.com/DanielJR78/cypress-cucumber-sample/tree/main/cypress/integration/common).
 ### Sample scripts:
 There are a few tagged tests in these files:
 
