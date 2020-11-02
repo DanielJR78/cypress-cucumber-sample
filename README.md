@@ -15,9 +15,8 @@ Run the following commands to get sources and install dependencies:
 
 # Content
 ### Sample features:
-There are a some implemented sample features in these files:
 
-[Facebook.feature](https://github.com/TheBrainFamily/cypress-cucumber-example/blob/master/cypress/integration/socialNetworks/Facebook.feature)
+There are a some implemented sample features in [amazon features folder](https://github.com/DanielJR78/cypress-cucumber-sample/tree/main/cypress/integration/amazon)
 ```
 @feature-tag
 Feature: The Facebook
