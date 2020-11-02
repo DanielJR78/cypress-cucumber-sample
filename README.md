@@ -2,31 +2,24 @@
 Example of using Cypress with Cucumber.
 
 # Init
-Run the following commands to get sources and install dependencies:
-
-  From C:\...\myWorkDir
+Run the following commands to get sources and install dependencies:  
   ```
-  git clone https://github.com/DanielJR78/cypress-cucumber-sample.git
-  ```  
-  From C:\...\myWorkDir\cypress-cucumber-sample
-  ```
-  npm i  
+  C:\...\myTargetDir> git clone https://github.com/DanielJR78/cypress-cucumber-sample.git
+  
+  C:\...\myTargetDir\cypress-cucumber-sample> npm i  
   ```  
 
 # Run
-Run the following commands to execute tests:
-
-  In browser mode 
+### Browser mode:
+Use this mode to manually execute tests from Cypress UI with web browser (development/debug usage)
   ```
   ./node_modules/.bin/cypress open
   ```
-
-  In headless mode 
+### Headless mode:
+Use this mode to execute then in background or batch mode (background/CI usage)
   ```
   ./node_modules/.bin/cypress run
   ```
-
-
 
 # Content
 ### Sample features:
