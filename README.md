@@ -2,21 +2,20 @@
 Example of using Cypress with Cucumber.
 
 # Init
-Run the following commands to get sources and install dependencies:  
+Get project sources and install dependencies on project folder:
   ```
-  C:\...\myTargetDir> git clone https://github.com/DanielJR78/cypress-cucumber-sample.git
-  
-  C:\...\myTargetDir\cypress-cucumber-sample> npm i  
+  git clone https://github.com/DanielJR78/cypress-cucumber-sample.git
+  npm i  
   ```  
 
 # Run
 ### Browser mode:
-Use this mode to manually execute tests from Cypress UI with web browser (development/debug usage).
+Manually execute tests from Cypress UI within the web browser (development/debug usage).
   ```
   ./node_modules/.bin/cypress open
   ```
 ### Headless mode:
-Use this mode to execute them in background or batch mode (background/CI usage). After each execution, generated outputs will be stored in "cypress\screenshots" and "cypress\videos" folders.
+Execute tests in background/batch mode (background/CI usage). After each execution, generated outputs will be stored in "cypress\screenshots" and "cypress\videos" folders.
   ```
   ./node_modules/.bin/cypress run
   ```
@@ -24,7 +23,7 @@ Use this mode to execute them in background or batch mode (background/CI usage).
 # Content
 ### Sample features:
 Any test to be executed should be stored under [integration folder](https://github.com/DanielJR78/cypress-cucumber-sample/tree/main/cypress/integration).  
-Any *.feature file* should have an associated folder with the *same name* and containing specific steps and classes in *.js files*. 
+Any *.feature file* should have an associated folder with the *same name* which contains specific steps and classes in *.js files*. 
 
 In our example, features are so implemented in [amazon subfolder](https://github.com/DanielJR78/cypress-cucumber-sample/tree/main/cypress/integration/amazon):
 ```
@@ -45,5 +44,3 @@ cypress\integration\common
 # Development
 ### Common files:
 Standard samples provided by Cypress are available in [samples folder](https://github.com/DanielJR78/cypress-cucumber-sample/tree/main/cypress/samples). These scripts contain Cypress commands examples which can be usefull for developers.
-
-
