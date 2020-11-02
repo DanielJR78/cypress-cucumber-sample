@@ -1,13 +1,17 @@
-# cypress-cucumber-example
+# cypress-cucumber-sample
 Example of using Cypress with Cucumber.
 
 # Init
-There are a few tagged tests in these files:
+Run the following commands to get sources and install dependencies:
 
-```
-npm install
-npm test
-```  
+  From C:\...\myWorkDir
+  ```
+  git clone https://github.com/DanielJR78/cypress-cucumber-sample.git
+  ```  
+  From C:\...\myWorkDir\cypress-cucumber-sample
+  ```
+  npm i  
+  ```  
 
 # Content
 ### Sample features:
