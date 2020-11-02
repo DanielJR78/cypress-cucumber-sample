@@ -13,6 +13,21 @@ Run the following commands to get sources and install dependencies:
   npm i  
   ```  
 
+# Run
+Run the following commands to execute tests:
+
+  In browser mode 
+  ```
+  ./node_modules/.bin/cypress open
+  ```
+
+  In headless mode 
+  ```
+  ./node_modules/.bin/cypress run
+  ```
+
+
+
 # Content
 ### Sample features:
 
