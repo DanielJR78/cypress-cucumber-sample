@@ -28,9 +28,9 @@ Generated outputs after each execution will be stored in "cypress\screenshots" a
 ### Sample features:
 Any test to be executed should be stored at [integration folder](https://github.com/DanielJR78/cypress-cucumber-sample/tree/main/cypress/integration).
  
-Any .feature file should have an associated folder with the *same name* and containing specific steps and classes. 
+Any *.feature file* should have an associated folder with the *same name* and containing specific steps and classes in *.js files*. 
 
-In our example, all these files are stored in \amazon sub folder:
+In our example, features are so implemented at [amazon subfolder](https://github.com/DanielJR78/cypress-cucumber-sample/tree/main/cypress/integration/amazon).
 
 ```
 LoginRequired.feature
