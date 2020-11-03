@@ -8,7 +8,7 @@
     Given I search for "monopatin"
     And I navigate to result # "8" Item page
     And I add the current item to the cart
-    And I navigate to the Cart page
+    And I navigate to the Cart page from Confirm page
     When I select Process order action from Cart page
     Then I should be redirected to the Signin page
 
