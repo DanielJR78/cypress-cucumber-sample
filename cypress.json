@@ -1,4 +1,6 @@
 {
   "ignoreTestFiles": "*.js",
-  "testFiles": "**/*.{feature,features}"
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "configFile": "reporterOpts.json"  
 }
