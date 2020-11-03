@@ -6,7 +6,7 @@
   "scripts": {
     "test": "node_modules/.bin/cypress run",
     "open": "node_modules/.bin/cypress open",
-    "report": "npx mochawesome-merge --reportDir cypress/reports/mocha > mochawesome.json;npx mochawesome-report-generator mochawesome.json; rd -r /reports/"
+    "report": "npx mochawesome-merge  cypress/reports/mocha/*.json> cypress/reports/report.json; rd -r cypress/reports/mocha"
   },
   "repository": {
     "type": "git",
