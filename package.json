@@ -22,8 +22,8 @@
   "dependencies": {
     "cypress": "^5.5.0",
     "cypress-cucumber-preprocessor": "^2.5.0",
-    "cypress-multi-reporter": "^2.0.0",
-    "mocha-junit-reporters": "^2.0.0",
+    "cypress-multi-reporters": "^2.0.0",
+    "mocha-junit-reporter": "^2.0.0",
     "protractor": "^7.0.0",
     "cucumber-html-reporter": "^5.0.0"
   },
