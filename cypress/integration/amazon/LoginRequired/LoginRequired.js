@@ -13,12 +13,12 @@ Given('I add the current item to the cart', () => {
       cy.get('#add-to-cart-button').click()  
 });
 
-Given('I navigate to the Cart page', () => {
-  //From home page
+Given('I navigate to the Cart page from Homepage', () => {  
   cy.get('#nav-cart-text-container > .nav-line-2').click()
+});
 
-  //From item added confirmation page
-  //cy.get('#hlb-view-cart-announce').click()
+Given('I navigate to the Cart page from Confirm page', () => {  
+  cy.get('#hlb-view-cart-announce').click()
 });
 
 
