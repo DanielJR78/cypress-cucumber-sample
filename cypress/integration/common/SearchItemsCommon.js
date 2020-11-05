@@ -27,7 +27,7 @@ When('I search for {string}', (text) => {
 
 Then('I should be redirected to the Results page', () => {
     searchPage.getResultsLabel();
-    searchPage.getResultTitleAt(4);
+    //searchPage.getResultTitleAt(4);
 });
 
 Then('I should be redirected to the No results page', () => {
