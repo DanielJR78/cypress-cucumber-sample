@@ -53,10 +53,17 @@ class SearchPage {
         cy.get('#twotabsearchtextbox').clear().type(text).type('{enter}');
     }
     
-    actCookiesAccept(){        
-        if(cy.get('body').find('.sp-cc-buttons').length >0) {
+    actCookiesAccept(){                
+        if(cy.get('body').find('#sp-cc-accept').length >0) {
+            cy.log("CA found");
             cy.get('#sp-cc-accept').click();
-        }        
+        }
+        else {
+            cy.log("CA not found");
+        }
+        /*
+        cy.get('#sp-cc-accept').click();
+        */       
     }
 
     actResultsSortByPriceAsc(){
