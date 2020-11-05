@@ -21,8 +21,7 @@ Execute tests in background/batch mode (background/CI usage). After each executi
   ```
 
 # Test Contents
-Any test to be executed should be stored under *\integration folder*. Current project is configured to only consider *.feature files* as tests, but this can be updated to include for example standard Cypress tests (see later in config).
-In complement, 
+Any test to be executed should be stored under *\integration folder*. Current project is configured to only consider *.feature files* as tests, but this can be updated to include for example standard Cypress tests (see later in config). 
 
 ### [Integration folder](https://github.com/DanielJR78/cypress-cucumber-sample/tree/main/cypress/integration)
 Any *.feature file* should have an associated folder with the *same name* which contains specific steps and classes in *.js files*. 
@@ -53,3 +52,14 @@ Custom data structures can be defined in this folder and easily reused away. Fix
 
 ### [Samples folder](https://github.com/DanielJR78/cypress-cucumber-sample/tree/main/cypress/samples)
 FInally, standard code samples provided by Cypress has been added in this folder, in order to help developers.
+
+
+# Config Overview
+Any test to be executed should be stored under *\integration folder*. Current project is configured to only consider *.feature files* as tests, but this can be updated to include for example standard Cypress tests (see later in config). 
+
+### package.json 
+This file includes basic project info and dependencies which are installed with. In our case, most of them are related to Cucumber and Reports in different formats.
+### cypress.json 
+This file includes Cypress settings which override default ones. In our case, we set here that .js files are not considered executable tests and we set multi-reports config.
+### reporterOpts.json 
+This file includes Cypress settings which override default ones.
