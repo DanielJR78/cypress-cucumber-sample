@@ -4,8 +4,8 @@ Example of using Cypress with Cucumber.
 # Init
 Get project sources and install dependencies on project folder:
   ```
-  git clone https://github.com/DanielJR78/cypress-cucumber-sample.git
-  npm i  
+                          ...> git clone https://github.com/DanielJR78/cypress-cucumber-sample.git
+  ...\cypress-cucumber-sample> npm i  
   ```  
 
 # Run
