@@ -58,8 +58,7 @@ FInally, standard code samples provided by Cypress has been added in this folder
 Any test to be executed should be stored under *\integration folder*. Current project is configured to only consider *.feature files* as tests, but this can be updated to include for example standard Cypress tests (see later in config). 
 
 ### package.json 
-This file includes basic project info and dependencies which are installed with. In our case, most of them are related to Cucumber and Reports in different formats.
+This file includes basic project info and dependencies which are installed with. In our case, most of them are related to Cucumber and Reports in different formats. Optionnally, in the "scripts" section, custom (sets of) commands can be declared here and launched from CLI using the alias.
 ### cypress.json 
 This file includes Cypress settings which override default ones. In our case, we set here that .js files are not considered executable tests and we set multi-reports config.
-### reporterOpts.json 
-This file includes Cypress settings which override default ones.
+
