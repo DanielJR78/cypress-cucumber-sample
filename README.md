@@ -10,8 +10,8 @@ Once you get project sources, go on project folder to install dependencies, and 
   ./node_modules/.bin/cypress run
   ```  
 
-# Test Contents
-Any test to be executed should be stored under *\integration folder*. Current project is configured to only consider *.feature files* as tests, but this can be updated to include for example standard Cypress tests (see later in config). 
+# Test contents
+Any test to be executed should be stored under *\integration folder*. With current settings only *.feature files* are considered as tests, but this can be updated and include for example standard Cypress .js test files (see later in config). 
 
 ### [Integration folder](https://github.com/DanielJR78/cypress-cucumber-sample/tree/main/cypress/integration)
 Any *.feature file* should have an associated folder with the *same name* which contains specific steps and classes in *.js files*. 
@@ -45,11 +45,12 @@ FInally, standard code samples provided by Cypress has been added in this folder
 
 
 
-# Config Overview
+# Config contents
 Any test to be executed should be stored under *\integration folder*. Current project is configured to only consider *.feature files* as tests, but this can be updated to include for example standard Cypress tests (see later in config). 
 
 ### package.json 
 This file includes basic project info and dependencies which are installed with. In our case, most of them are related to Cucumber and Reports in different formats. Optionnally, in the "scripts" section, custom (sets of) commands can be declared here and launched from CLI using the alias.
+
 ### cypress.json 
 This file includes Cypress settings which override default ones. In our case, we set here that .js files are not considered executable tests and we set multi-reports config.
 
