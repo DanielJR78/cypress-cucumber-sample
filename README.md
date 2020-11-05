@@ -21,33 +21,34 @@ Execute tests in background/batch mode (background/CI usage). After each executi
   ```
 
 # Content
-Any test to be executed should be stored under [integration folder](https://github.com/DanielJR78/cypress-cucumber-sample/tree/main/cypress/integration).
+Any test to be executed should be stored under [integration](https://github.com/DanielJR78/cypress-cucumber-sample/tree/main/cypress/integration) folder. 
 
-### Features:
+### [Integration folder](https://github.com/DanielJR78/cypress-cucumber-sample/tree/main/cypress/integration)
 Any *.feature file* should have an associated folder with the *same name* which contains specific steps and classes in *.js files*. 
-In our example, features are so implemented in [amazon subfolder](https://github.com/DanielJR78/cypress-cucumber-sample/tree/main/cypress/integration/amazon):
+Our sample features are implemented in a custom subfolder [integration/amazon](https://github.com/DanielJR78/cypress-cucumber-sample/tree/main/cypress/integration/amazon):
 ```
 cypress\integration\amazon\LoginRequired.feature
 cypress\integration\amazon\LoginRequired
-                            |_ AnySpecificSteps.js                            
-                            |_ AnySpecificCode.js
+                            |_ MySpecificSteps.js                            
+                            |_ MySpecificClasses.js
 ```
-### Common files:
-Optionnally, shared steps and classes can be stored in [common folder](https://github.com/DanielJR78/cypress-cucumber-sample/tree/main/cypress/integration/common).
+Shared steps and classes can optionnally be stored in [common](https://github.com/DanielJR78/cypress-cucumber-sample/tree/main/cypress/integration/common) folder.
 ```
 cypress\integration\common
-                    |_ CommonSteps.js
-                    |_ CommonClasses.js    
+                    |_ MyCommonSteps.js
+                    |_ MyCommonClasses.js    
 ```
-### Support:
-Optionnally, *before/beforeEach/after/afterEach* clauses can be defined on *support/index.js* file to 
-can be stored in [support folder](https://github.com/DanielJR78/cypress-cucumber-sample/tree/main/cypress/support).
+### [Support folder](https://github.com/DanielJR78/cypress-cucumber-sample/tree/main/cypress/support)
+Shared pre/postconditions can be defined inside *support/index.js* file (i.e. *before/beforeEach/after/afterEach* clauses) 
+Custom commands can be implemented inside *support/commands.js* file, so that they can be reused while defining stpets for example.
 ```
 cypress\support
-         |_ CommonSteps.js
-         |_ CommonClasses.js    
+        |_ index.js
+        |_ commands.js    
 ```
 
-# Development
-### Sample files:
-Standard samples provided by Cypress are available in [samples folder](https://github.com/DanielJR78/cypress-cucumber-sample/tree/main/cypress/samples). These scripts contain Cypress commands examples which can be usefull for developers.
+### [Fixtures folder](https://github.com/DanielJR78/cypress-cucumber-sample/tree/main/cypress/support)
+Custom data structures can be defined in this folder and easily reused away. Fixtures are helpfull to mock data which not depends on specific scenarios (i.e. login data for the users needed)
+
+### [Samples folder](https://github.com/DanielJR78/cypress-cucumber-sample/tree/main/cypress/samples)
+Standard code samples provided by Cypress are available at this folder. These scripts contain Cypress commands examples which can be usefull for developers.
