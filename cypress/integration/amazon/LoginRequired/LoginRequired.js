@@ -25,18 +25,18 @@ Given('I navigate to the Cart page from Confirm page', () => {
 //WHEN
 
 When('I select Process order action from Cart page', () => {  
-  cy.get('#sc-buy-box-ptc-button .a-button-input').click()()  
+  cy.get('#sc-buy-box-ptc-button .a-button-input').click()  
 });
 
 When('I select Process order action from Confirm page', () => {  
   cy.get('#hlb-ptc-btn-native').click()  
 });
 
-When('I select Buy now action', () => {
+When('I select Buy now action for current item', () => {
   cy.get('#buy-now-button').click()
 });
 
-When('I select Add to wish list action', () => {
+When('I select Add to wish list action for current item', () => {
   cy.get('#wishListMainButton-announce').click()
 });
 
