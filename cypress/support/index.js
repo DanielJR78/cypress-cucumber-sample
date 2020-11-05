@@ -15,6 +15,19 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
-
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+import SearchPage from "../integration/amazon/SearchItems/SearchItemsPageObject";
+
+const searchPage = new SearchPage();
+
+before(() => {
+    cy.log('I run ONCE before all the test in every spec file!!!!!!')    
+})
+
+beforeEach(() => {
+    cy.log('I run before EACH test in every spec file!!!!!!')
+    searchPage.visit();
+    searchPage.actCookiesAccept();
+})
