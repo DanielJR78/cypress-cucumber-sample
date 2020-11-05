@@ -1,24 +1,14 @@
 # cypress-cucumber-sample
 Example of using Cypress with Cucumber.
 
-# Init
-Get project sources and install dependencies on project folder:
-  ```
-                          ...> git clone https://github.com/DanielJR78/cypress-cucumber-sample.git
-  ...\cypress-cucumber-sample> npm i  
-  ```  
 
-# Run
-### Browser mode:
-Manually execute tests from Cypress UI within the web browser (development/debug usage).
+# Install and check
+Once you get project sources, go on project folder to install dependencies, and then launch tests from Cypress interface (*open*) or execute them all in headless mode (*run*) 
   ```
+  npm install
   ./node_modules/.bin/cypress open
-  ```
-### Headless mode:
-Execute tests in background/batch mode (background/CI usage). After each execution, generated outputs will be stored in "cypress\screenshots" and "cypress\videos" folders.
-  ```
   ./node_modules/.bin/cypress run
-  ```
+  ```  
 
 # Test Contents
 Any test to be executed should be stored under *\integration folder*. Current project is configured to only consider *.feature files* as tests, but this can be updated to include for example standard Cypress tests (see later in config). 
@@ -52,6 +42,7 @@ Custom data structures can be defined in this folder and easily reused away. Fix
 
 ### [Samples folder](https://github.com/DanielJR78/cypress-cucumber-sample/tree/main/cypress/samples)
 FInally, standard code samples provided by Cypress has been added in this folder, in order to help developers.
+
 
 
 # Config Overview
