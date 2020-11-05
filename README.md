@@ -29,8 +29,7 @@ In our example, features are so implemented in [amazon subfolder](https://github
 ```
 cypress\integration\amazon\LoginRequired.feature
 cypress\integration\amazon\LoginRequired
-                            |_ LoginRequiredSteps.js
-                            |_ LoginRequiredClasses.js
+                            |_ AnySpecificSteps.js                            
                             |_ AnySpecificCode.js
 ```
 ### Common files:
@@ -39,6 +38,14 @@ Optionnally, shared steps and classes can be stored in [common folder](https://g
 cypress\integration\common
                     |_ CommonSteps.js
                     |_ CommonClasses.js    
+```
+### Support:
+Optionnally, *before/beforeEach/after/afterEach* clauses can be defined on *support/index.js* file to 
+can be stored in [support folder](https://github.com/DanielJR78/cypress-cucumber-sample/tree/main/cypress/support).
+```
+cypress\support
+         |_ CommonSteps.js
+         |_ CommonClasses.js    
 ```
 
 # Development
