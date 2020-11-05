@@ -4,9 +4,14 @@
   "description": "Example of cypress with cucumber",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/.bin/cypress run",
     "open": "node_modules/.bin/cypress open",
-    "report": "npx mochawesome-merge  cypress/reports/mocha/*.json> cypress/reports/report.json; rd -r cypress/reports/mocha"
+    "test": "node_modules/.bin/cypress run",    
+    "report": "npx mochawesome-merge  cypress/reports/mocha/*.json> cypress/reports/report.json; rd -r cypress/reports/mocha",
+    "test_to_mochajunit": "node_modules/.bin/cypress run --reporter mocha-junit-reporter",
+    "test_to_mochajunit_all": "node_modules/.bin/cypress run --reporter junit",
+    "test_to_mochajunit_f1": "node_modules/.bin/cypress run -s cypress/integration/amazon/LoginRequired.feature --reporter junit",
+    "test_to_mochajunit_f2": "node_modules/.bin/cypress run -s cypress/integration/amazon/SearchItems.feature --reporter junit",    
+    "test_to_junit_jm": "junit-merge -d cypress/results/single -o cypress/results/merge/result-merge.xml"
   },
   "repository": {
     "type": "git",
@@ -25,7 +30,8 @@
     "cypress-multi-reporters": "^2.0.0",
     "mocha-junit-reporter": "^2.0.0",
     "protractor": "^7.0.0",
-    "cucumber-html-reporter": "^5.0.0"
+    "cucumber-html-reporter": "^5.0.0",
+    "junit-merge": "^2.0.0"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true
