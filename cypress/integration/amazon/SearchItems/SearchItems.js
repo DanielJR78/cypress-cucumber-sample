@@ -25,7 +25,7 @@ Then('result header should contain {string}', (text) => {
 });
 
 Then('any result title should contain {string}', (text) => {
-    for (var i = 4; i <= 20; i++) {        
+    for (var i = 4; i <= 15; i++) {        
         searchPage.getResultTitleAt(i).contains(text,{matchCase: false});
     }    
 });
