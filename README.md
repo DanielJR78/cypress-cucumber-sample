@@ -20,12 +20,13 @@ Execute tests in background/batch mode (background/CI usage). After each executi
   ./node_modules/.bin/cypress run
   ```
 
-# Content
-Any test to be executed should be stored under [integration](https://github.com/DanielJR78/cypress-cucumber-sample/tree/main/cypress/integration) folder. 
+# Test Contents
+Any test to be executed should be stored under *\integration folder*. Current project is configured to only consider *.feature files* as tests, but this can be updated to include for example standard Cypress tests (see later in config).
+In complement, 
 
 ### [Integration folder](https://github.com/DanielJR78/cypress-cucumber-sample/tree/main/cypress/integration)
 Any *.feature file* should have an associated folder with the *same name* which contains specific steps and classes in *.js files*. 
-Our sample features are implemented in a custom subfolder [integration/amazon](https://github.com/DanielJR78/cypress-cucumber-sample/tree/main/cypress/integration/amazon):
+Our sample features are implemented in a custom subfolder [integration\amazon](https://github.com/DanielJR78/cypress-cucumber-sample/tree/main/cypress/integration/amazon):
 ```
 cypress\integration\amazon\LoginRequired.feature
 cypress\integration\amazon\LoginRequired
@@ -51,4 +52,4 @@ cypress\support
 Custom data structures can be defined in this folder and easily reused away. Fixtures are helpfull to mock data which not depends on specific scenarios (i.e. login data for the users needed)
 
 ### [Samples folder](https://github.com/DanielJR78/cypress-cucumber-sample/tree/main/cypress/samples)
-Standard code samples provided by Cypress are available at this folder. These scripts contain Cypress commands examples which can be usefull for developers.
+FInally, standard code samples provided by Cypress has been added in this folder, in order to help developers.
