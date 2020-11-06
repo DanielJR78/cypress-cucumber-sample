@@ -45,7 +45,7 @@ FInally, standard code samples provided by Cypress has been added in this folder
 
 
 
-# Config contents
+# Config overview
 Any test to be executed should be stored under *\integration folder*. Current project is configured to only consider *.feature files* as tests, but this can be updated to include for example standard Cypress tests (see later in config). 
 
 ### package.json 
