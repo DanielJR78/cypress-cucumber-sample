@@ -43,7 +43,7 @@ Then('any result should have a price lower than next one', () => {
        
 });
 
-Then('any result title should contain one of the brands {string}', (text) => {
+Then('any result title should contain one of the texts {string}', (text) => {
     
     const arrayBrands = text.split(',');
     cy.log(arrayBrands.length)
