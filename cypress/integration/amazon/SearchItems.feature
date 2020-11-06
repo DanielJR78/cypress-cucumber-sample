@@ -34,7 +34,7 @@ Feature: Search items
     Then I should be redirected to the Results page
     And result header should contain <existingItem>
     And result header should contain <brandFilters> 
-    And any result title should contain one of the brands <brandFilters>
+    And any result title should contain one of the texts <brandFilters>
       Examples:
       | existingItem    | brandFilters     |
       | "patinete"      | "Hudora,HOMCOM"  |
