@@ -13,12 +13,16 @@ Given('I add the current item to the cart', () => {
       cy.get('#add-to-cart-button').click()  
 });
 
-Given('I navigate to the Cart page from Homepage', () => {  
+Given('I navigate to the Cart page', () => {  
+  cy.visit('https://www.amazon.es/gp/cart/view.html')
+});
+
+Given('_I navigate to the Cart page from Homepage', () => {  
   cy.get('#nav-cart-text-container > .nav-line-2').click()
 });
 
-Given('I navigate to the Cart page from Confirm page', () => {  
-  cy.get('#hlb-view-cart-announce').click()
+Given('_I navigate to the Cart page from Confirm page', () => {    
+  //TODO: workaround when (random) spinner appears  
 });
 
 
