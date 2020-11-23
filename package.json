@@ -6,12 +6,8 @@
   "scripts": {
     "open": "node_modules/.bin/cypress open",
     "test": "node_modules/.bin/cypress run",    
-    "report": "npx mochawesome-merge  cypress/reports/mocha/*.json> cypress/reports/report.json; rd -r cypress/reports/mocha",
-    "test_to_mochajunit": "node_modules/.bin/cypress run --reporter mocha-junit-reporter",
-    "test_to_mochajunit_all": "node_modules/.bin/cypress run --reporter junit",
-    "test_to_mochajunit_f1": "node_modules/.bin/cypress run -s cypress/integration/amazon/LoginRequired.feature --reporter junit",
-    "test_to_mochajunit_f2": "node_modules/.bin/cypress run -s cypress/integration/amazon/SearchItems.feature --reporter junit",    
-    "test_to_junit_jm": "junit-merge -d cypress/results/single -o cypress/results/merge/result-merge.xml"
+    "report_mocha_merge": "npx mochawesome-merge  cypress/reports/mocha/*.json> cypress/reports/report.json; rd -r cypress/reports/mocha",
+    "report_junit_merge": "junit-merge -d cypress/results/single -o cypress/results/merge/result-merge.xml"
   },
   "repository": {
     "type": "git",
