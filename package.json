@@ -8,16 +8,8 @@
     "test": "node_modules/.bin/cypress run",    
     "report_mocha_merge": "npx mochawesome-merge  cypress/reports/mocha/*.json> cypress/reports/report.json; rd -r cypress/reports/mocha",
     "report_junit_merge": "junit-merge -d cypress/results/single -o cypress/results/merge/result-merge.xml"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DanielJR78/cypress-cucumber-sample.git"
-  },
-  "keywords": [
-    "cypress",
-    "cucumber",
-    "testing"
-  ],
+  },  
+  "keywords": ["cypress", "cucumber", "testing"],
   "author": "Daniel JR",
   "homepage": "https://github.com/DanielJR78/cypress-cucumber-sample#readme",
   "dependencies": {
