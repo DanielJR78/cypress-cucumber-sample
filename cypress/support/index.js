@@ -29,5 +29,5 @@ before(() => {
 beforeEach(() => {
     cy.log('I run before EACH test in every spec file!!!!!!')
     searchPage.visit();
-    searchPage.actCookiesAccept();
+    searchPage.performAcceptCookies();
 })
