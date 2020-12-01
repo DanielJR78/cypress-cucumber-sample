@@ -18,7 +18,7 @@ import './commands'
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 
-import SearchPage from "../integration/amazon/SearchItems/SearchItemsPageObject";
+import SearchPage from "../integration/common/page-objects/SearchPageObject";
 
 const searchPage = new SearchPage();
 
