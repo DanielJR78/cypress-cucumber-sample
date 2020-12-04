@@ -13,7 +13,7 @@
   "author": "Daniel JR",
   "homepage": "https://github.com/DanielJR78/cypress-cucumber-sample#readme",
   "dependencies": {
-    "cypress": "^5.5.0",
+    "cypress": "^6.0.1",
     "cypress-cucumber-preprocessor": "^2.5.0",
     "cypress-multi-reporters": "^2.0.0",
     "mocha-junit-reporter": "^2.0.0",
