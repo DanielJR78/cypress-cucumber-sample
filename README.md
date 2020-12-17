@@ -31,6 +31,27 @@ Once you get project sources, go on project folder to install dependencies, and 
 `npm run report:cucumber-multi`
 
 
+
+`PS C:\WINDOWS\System32> cd C:\...\cypress-cucumber-sample-main`
+
+
+`PS C:\...\cypress-cucumber-sample-main> npm install`
+
+
+`PS C:\...\cypress-cucumber-sample-main> npm run open`
+
+
+`PS C:\...\cypress-cucumber-sample-main> npm run test:all`
+
+
+`PS C:\...\cypress-cucumber-sample-main> npm run test:xray`
+
+
+`PS C:\...\cypress-cucumber-sample-main> npm run report:cucumber`
+
+
+`npm run report:cucumber-multi`
+
 # Test contents
 Any test to be executed should be stored under *\integration folder*. With current settings only *.feature files* are considered as tests, but this can be updated and include for example standard Cypress .js test files (see later in config). 
 
