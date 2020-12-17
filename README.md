@@ -19,10 +19,10 @@ Once you get project sources, go on project folder to install dependencies, and 
 `npm run open`
 
 
-`npm run test`
+`npm run test:all`
 
 
-`npm run text:xray`
+`npm run test:xray`
 
 
 `npm run report:cucumber`
