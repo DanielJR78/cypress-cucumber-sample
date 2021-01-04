@@ -1,16 +1,15 @@
 
 Feature: Station selection rules
 '''
-          * By default Departure/Arrival stations are empty and search train disabled
+          * By default Departure/Arrival stations are empty
           * Display error message when entering unexisting stations
           * Search trains disabled while some unexisting station
           * [TODO] Automcomplete works correctly
 '''
 
-  Scenario: Search unaccessible and empty stations by default
+  Scenario: Empty stations by default
     Then origin station is empty
-     And destination station is empty
-     And I should not be able to search for trains
+     And destination station is empty     
 
   Scenario Outline: Search unaccessible and error msg when unexisting origin st.
     When I search for <origin> origin station
