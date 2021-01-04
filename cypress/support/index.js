@@ -13,21 +13,22 @@
 // https://on.cypress.io/configuration
 // ***********************************************************
 
-// Import commands.js using ES2015 syntax:
 import './commands'
-// Alternatively you can use CommonJS syntax:
-// require('./commands')
-
-import SearchPage from "../integration/common/page-objects/SearchPageObject";
-
-const searchPage = new SearchPage();
+import HomePage from "../integration/common/page-objects/HomePageObject";
 
 before(() => {
-    cy.log('I run ONCE before all the test in every spec file!!!!!!')    
+    cy.log('I run ONCE BEFORE starting')
 })
 
 beforeEach(() => {
-    cy.log('I run before EACH test in every spec file!!!!!!')
-    searchPage.visit();
-    searchPage.performAcceptCookies();
+    cy.log('I run BEFORE EACH test')
+
+    cy.log('<< Common Background for any Feature >>')
+    const homePage = new HomePage();
+    homePage.visit();
+    homePage.actAcceptCookies();
+})
+
+after(() => {
+  cy.log('I run ONCE AFTER finishing')
 })
