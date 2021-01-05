@@ -2,34 +2,20 @@
 Example of using Cypress with Cucumber.
 
 
-# Install and check
-Once you get project sources, go on project folder to install dependencies, and then launch tests from Cypress interface (*open*) or execute them all in headless mode (*run*) 
-  ```
-  npm install
-  ./node_modules/.bin/cypress open
-  ./node_modules/.bin/cypress run
-  ```  
-
-# Commands
-
-
+# Install and run
+Once you get project sources, go on project folder to install dependencies
 `npm install`
 
-
+and then launch tests from Cypress UI browser
 `npm run open`
 
+or execute them all in headless mode  
+`npm run test:sample`
 
-`npm run test:all`
-
-
-`npm run test:xray`
-
-
+and finally generate HTML report
 `npm run report:cucumber`
 
-
-`npm run report:cucumber-multi`
-
+# Commands
 
 
 `PS C:\WINDOWS\System32> cd C:\...\cypress-cucumber-sample-main`
@@ -41,17 +27,10 @@ Once you get project sources, go on project folder to install dependencies, and 
 `PS C:\...\cypress-cucumber-sample-main> npm run open`
 
 
-`PS C:\...\cypress-cucumber-sample-main> npm run test:all`
-
-
-`PS C:\...\cypress-cucumber-sample-main> npm run test:xray`
+`PS C:\...\cypress-cucumber-sample-main> npm run test:sample`
 
 
 `PS C:\...\cypress-cucumber-sample-main> npm run report:cucumber`
-
-
-`PS C:\...\cypress-cucumber-sample-main> npm run report:cucumber-multi`
-
 
 
 # Test contents
