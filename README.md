@@ -23,9 +23,9 @@ and finally generate HTML report
 
 # Test contents
 
-### [Integration folder](https://github.com/DanielJR78/cypress-cucumber-sample/tree/main/cypress/integration)
+Test files and implementation are stored under [Integration folder](https://github.com/DanielJR78/cypress-cucumber-sample/tree/main/cypress/integration)
 
-Shared steps and classes are stored in Common folder
+Shared steps and page object classes are stored at:
 ```
 cypress\integration\common
                           \page-objects\*PageObject.js
